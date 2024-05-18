@@ -3,21 +3,21 @@
 --
 -- See the kickstart.nvim README for more information
 return {
-  {
-    'Exafunction/codeium.nvim',
-    lazy = false,
-    dependencies = {
-      'nvim-lua/plenary.nvim',
-      'hrsh7th/nvim-cmp',
-    },
-    config = function()
-      require('codeium').setup {
-        lazy = false,
-      }
-    end,
-  },
-  {
-    'theprimeagen/harpoon',
-    opts = {},
-  },
+  -- {
+  --   'Exafunction/codeium.nvim',
+  --   lazy = false,
+  --   dependencies = {
+  --     'nvim-lua/plenary.nvim',
+  --     'hrsh7th/nvim-cmp',
+  --   },
+  --   config = function()
+  --     require('codeium').setup {
+  --       lazy = false,
+  --     }
+  --   end,
+  -- },
+  -- {
+  --   'theprimeagen/harpoon',
+  --   opts = {},
+  -- },
 }
