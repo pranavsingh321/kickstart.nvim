@@ -928,5 +928,5 @@ vim.keymap.set("n", "<leader>Y", [["+Y]])
 vim.keymap.set({"n", "v"}, "<leader>d", [["_d]])
 vim.keymap.set("x", "<leader>p", [["_dP]])
 vim.api.nvim_set_keymap('n', '<CR>', 'o<Esc>', { noremap = true })
--- Remove trailing whitespace on close
-vim.cmd [[autocmd BufWinLeave * %s/\s\+$//e]]
+-- Remove trailing whitespace on closing the buffer or leaving the buffer
+vim.cmd [[autocmd BufUnload,BufLeave * %s/\s\+$//e]]
